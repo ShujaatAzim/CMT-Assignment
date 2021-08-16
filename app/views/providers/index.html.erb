@@ -1,0 +1,28 @@
+<div class="provider_table">
+  <table>
+    <tr>
+      <th>NPI</th>
+      <th>Type</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Street Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip Code</th>
+      <th>Taxonomy</th>
+    </tr>
+    <% @providers.each do |provider| %>
+      <tr>
+        <td><%= provider.npi %></td>
+        <td><%= provider.enumeration_type %></td>
+        <td><%= provider.first_name %></td>
+        <td><%= provider.last_name %></td>
+        <td><%= provider.address %></td>
+        <td><%= provider.city %></td>
+        <td><%= provider.state %></td>
+        <td><%= provider.postal_code %></td>
+        <td><%= provider.taxonomy %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
