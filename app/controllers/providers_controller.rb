@@ -4,6 +4,9 @@ class ProvidersController < ApplicationController
     @providers = Provider.all
   end
 
+  def show
+  end
+
   def create
     @provider = Provider.create(provider_params)
     if @provider.valid?
